@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "mono:pixelsize=16:antialias=true:autohint=true";
+static char *font = "RobotoMono:pixelsize=13:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -63,8 +63,9 @@ static unsigned int cursorthickness = 2;
 static int bellvolume = 0;
 
 /* default TERM value */
-char *termname = "st-256color";
+//char *termname = "st-256color";
 
+char *termname = "xterm-256color";
 /*
  * spaces per tab
  *
@@ -85,14 +86,30 @@ unsigned int tabspaces = 8;
 /* bg opacity */
 unsigned int alpha = 0xed;
 
+//  "#1e1e27", // dark blue-purple background
+//  "#37213d", // lighter blue-purple background
+//  "#de90f0", // function declaration
+//  "#b53253", // potential replacement for strings
+//  "#94495d", // potential replacement for strings 2 
+//  "#18e1f7", // numbers
+//  "#5d4061", // vim purple line numbers
+//  "#8364c9". // vim precondition
+//  "#695196", // special characters
+//
+
+//	"#723159", // pngs
+//  "#9a3049", // strings
+//	"#d42459", // executables, type declarations
+
 static const char *colorname[] = {
-	"#282828", /* hard contrast: #1d2021 / soft contrast: #32302f */
-	"#cc241d",
-	"#98971a",
-	"#d79921",
-	"#458588",
-	"#b16286",
-	"#689d6a",
+	"#1e1e27", // background
+    "#d42459", // strings
+	"#9a3049", // executables, type declarations
+	"#18e1f7", // Gtk-"WARNING"
+	"#5d554e", // dirs
+	"#ab60ed", // pngs
+	"#e6c098", // symbolic links
+    
 	"#a89984",
 	"#928374",
 	"#fb4934",
@@ -101,7 +118,8 @@ static const char *colorname[] = {
 	"#83a598",
 	"#d3869b",
 	"#8ec07c",
-	"#ebdbb2",
+
+	"#ffe3cd",
 	[255] = 0,
 	/* more colors can be added after 255 to use with DefaultXX */
 	"black",   /* 256 -> bg */
