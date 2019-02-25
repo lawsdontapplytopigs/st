@@ -1,9 +1,9 @@
-# Luke's build of st - the simple (suckless) terminal
+# My build of st - the simple (suckless) terminal
 
 The [suckless terminal (st)](https://st.suckless.org/) with some additional features:
 
 + Compatibility with `Xresources` and `pywal` for dynamic colors.
-+ Default [gruvbox](https://github.com/morhetz/gruvbox) colors otherwise.
++ Default black cherries colors otherwise.
 + Transparency/alpha, which is also adjustable from `~/.Xresources`.
 + Default font is system "mono" at 16pt, meaning the font will match your system font.
 + Very useful keybinds including:
@@ -59,13 +59,8 @@ The `alpha` value (for transparency) goes from `0` (transparent) to `255`
 
 To be clear about the color settings:
 
-- This build will use gruvbox colors by default and as a fallback.
+- This build will use the black cherries colors by default and as a fallback.
 - If there are Xresources colors defined, those will take priority.
 - But if `wal` has run in your session, its colors will take priority.
 
 Note that when you run `wal`, it will negate the transparency of existing windows, but new windows will continue with the previously defined transparency.
-
-## Contact
-
-- Luke Smith <luke@lukesmith.xyz>
-- [https://lukesmith.xyz](https://lukesmith.xyz)
