@@ -84,7 +84,7 @@ char *termname = "xterm-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-unsigned int alpha = 0xed;
+unsigned int alpha = 0xff;
 
 static const char *colorname[] = {
     // OLD CHERRIES SCHEME
