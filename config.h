@@ -86,40 +86,25 @@ unsigned int tabspaces = 8;
 /* bg opacity */
 unsigned int alpha = 0xed;
 
-//  "#1e1e27", // dark blue-purple background
-//  "#37213d", // lighter blue-purple background
-//  "#de90f0", // function declaration
-//  "#b53253", // potential replacement for strings
-//  "#94495d", // potential replacement for strings 2 
-//  "#18e1f7", // numbers
-//  "#5d4061", // vim purple line numbers
-//  "#8364c9". // vim precondition
-//  "#695196", // special characters
-//
-
-//	"#723159", // pngs
-//  "#9a3049", // strings
-//	"#d42459", // executables, type declarations
-
 static const char *colorname[] = {
+    // OLD CHERRIES SCHEME
 	"#1e1e27", // background
-    "#d42459", // strings
+    "#e92f52", // strings
 	"#9a3049", // executables, type declarations
 	"#18e1f7", // Gtk-"WARNING"
 	"#5d554e", // dirs
-	"#ab60ed", // pngs
+	"#8860ed", // pngs
 	"#e6c098", // symbolic links
+	"#28f08c",
     
-	"#a89984",
-	"#928374",
-	"#fb4934",
-	"#b8bb26",
-	"#fabd2f",
-	"#83a598",
-	"#d3869b",
-	"#8ec07c",
-
-	"#ffe3cd",
+    "#e92f52",
+	"#9a3049",
+	"#18e1f7",
+	"#5d554e",
+	"#8860ed",
+	"#e6c098",
+	"#28f08c",
+	"#fffdd8",
 	[255] = 0,
 	/* more colors can be added after 255 to use with DefaultXX */
 	"black",   /* 256 -> bg */
