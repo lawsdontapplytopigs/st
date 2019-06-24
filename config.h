@@ -5,7 +5,9 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "RobotoMono:pixelsize=13:antialias=true:autohint=true";
+
+static char *font = "RobotoMono:pixelsize=15:antialias=true:autohint=false:hinting=true:hintstyle=4:dpi=111";
+// static char *font = "RobotoMono:pixelsize=15:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -63,9 +65,9 @@ static unsigned int cursorthickness = 2;
 static int bellvolume = 0;
 
 /* default TERM value */
-//char *termname = "st-256color";
+char *termname = "st-256color";
 
-char *termname = "xterm-256color";
+/* char *termname = "xterm-256color"; */
 /*
  * spaces per tab
  *
@@ -86,25 +88,27 @@ unsigned int tabspaces = 8;
 /* bg opacity */
 unsigned int alpha = 0xff;
 
+// Black Cherries color scheme
 static const char *colorname[] = {
-    // OLD CHERRIES SCHEME
-	"#1e1e27", // background
-    "#e92f52", // strings
-	"#9a3049", // executables, type declarations
-	"#18e1f7", // Gtk-"WARNING"
-	"#5d554e", // dirs
-	"#8860ed", // pngs
-	"#e6c098", // symbolic links
-	"#28f08c",
-    
-    "#e92f52",
+	"#1a1823", 
 	"#9a3049",
-	"#18e1f7",
-	"#5d554e",
+    "#e92f52", 
+    "#ff8bff",
+    "#565068",
+	"#8860ed", 
+	"#f8e0b8", 
+	"#50ffd3", 
+    
+    /* "#343044", */
+    /* "#68607e", */
+    "#535064",
+    "#9a3049",
 	"#8860ed",
-	"#e6c098",
-	"#28f08c",
-	"#fffdd8",
+	"#e92f52",
+	"#a888e0", 
+	"#40aff0",
+	"#40cfd8",
+	"#ffffff",
 	[255] = 0,
 	/* more colors can be added after 255 to use with DefaultXX */
 	"black",   /* 256 -> bg */
