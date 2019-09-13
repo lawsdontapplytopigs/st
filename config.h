@@ -6,7 +6,7 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 
-static char *font = "RobotoMono:pixelsize=15:antialias=true:autohint=false:hinting=true:hintstyle=4:dpi=111";
+static char *font = "RobotoMonoNerdFont:pixelsize=15:antialias=true:autohint=false:hinting=true:hintstyle=3:dpi=98";
 // static char *font = "RobotoMono:pixelsize=15:antialias=true:autohint=true";
 static int borderpx = 2;
 
@@ -90,22 +90,26 @@ unsigned int alpha = 0xff;
 
 // Black Cherries color scheme
 static const char *colorname[] = {
-	"#1a1823", 
+    // I'll have to choose out of one of these
+	// "#1a1823",
+	// "#1c1a27",
+	// "#1f1a27", 
+	"#1e1a2a", 
 	"#9a3049",
     "#e92f52", 
     "#ff8bff",
     "#565068",
-	"#8860ed", 
-	"#f8e0b8", 
+	"#a878ed", 
+	"#cceeff", 
 	"#50ffd3", 
     
     /* "#343044", */
     /* "#68607e", */
     "#535064",
-    "#9a3049",
-	"#8860ed",
+    "#d36296",
+	"#f8d000",
 	"#e92f52",
-	"#a888e0", 
+	"#b088e0", 
 	"#40aff0",
 	"#40cfd8",
 	"#ffffff",
